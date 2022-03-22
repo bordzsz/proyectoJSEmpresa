@@ -1,6 +1,7 @@
 import { MostradoCategorias } from "./MostradoCategorias";
 import styles from "./App.module.css";
 import { ListaSeleccionada } from "./ListaSeleccionada";
+import { FraseDeCategoria } from "./FraseDeCategoria";
 
 export function App(){
     return(<div>
@@ -9,8 +10,18 @@ export function App(){
             </header>
             <main>
                 <MostradoCategorias />
-                <h3>Lista de frases seleccionada:</h3>
-                <ListaSeleccionada />
+
+                <div className={styles.container}>
+                    <div>
+                        <h3>Lista de frases seleccionadas</h3>
+                        <ListaSeleccionada />
+                    </div>
+
+                    <div>
+                        <h3>Frase de la categoría</h3>
+                        <FraseDeCategoria />
+                    </div>
+                </div>
             </main>
     </div>);
 }

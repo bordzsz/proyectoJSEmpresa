@@ -5,6 +5,7 @@ import styles from "./MostradoCategorias.module.css";
 export function MostradoCategorias() {
   //https://api.chucknorris.io/jokes/random
   //https://api.chucknorris.io/jokes/categories
+  //https://api.chucknorris.io/jokes/random?category=animal
 
   const [categorias, setCategorias] = useState([]);
 
@@ -19,8 +20,12 @@ export function MostradoCategorias() {
   return (
     <ul className={styles.listaCategorias}>
       {categorias.map((categoria) => (
-        <Categoria key={categoria.id} categoria = {categoria} />
+        //key={categoria.id} 
+        <Categoria categoria = {categoria} />
       ))}
     </ul>
+
+    
   );
+
 }
