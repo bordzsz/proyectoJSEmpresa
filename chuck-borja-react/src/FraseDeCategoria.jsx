@@ -28,6 +28,6 @@ export function FraseDeCategoria({ categoria }) {
         <p> {categorias.value} </p>
         <button onClick={fetchPost}> Generar nueva frase de esa categoría.</button>
       </li>
-    </ul><div><div className={styles.containerCajas}><img src="https://assets.chucknorris.host/img/avatar/chuck-norris.png" alt="" /><h3>Lista de Frases Seleccionadas</h3></div><ListaSeleccionada frase={categorias}/></div></>
+    </ul><div><div className={styles.containerCajas}><img src="https://assets.chucknorris.host/img/avatar/chuck-norris.png" alt="" /><h3>Lista de Frases Seleccionadas</h3></div><ListaSeleccionada frase={categorias.value}/></div></>
   );
 }

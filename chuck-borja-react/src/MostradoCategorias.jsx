@@ -14,7 +14,7 @@ export function MostradoCategorias() {
   const [frase, setFrase] = useState([]);
 
   const categoriaSeleccionada = async (e) => {
-    setValorCategorias(e.target.innerHTML);
+    setValorCategorias(e.target.value);
   };
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export function MostradoCategorias() {
     <><ul className={styles.listaCategorias}>
       {categorias.map((categoria) => (
 
-        <button className={styles.botonCategoria} onClick={categoriaSeleccionada}> <Categoria key={categoria.id} categoria={categoria} /> </button>
+        <button value={categoria} className={styles.botonCategoria} onClick={categoriaSeleccionada}> <Categoria key={categoria.id} categoria={categoria} /> </button>
 
       ))}
     </ul>

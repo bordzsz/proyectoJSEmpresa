@@ -4,7 +4,7 @@ export function ListaSeleccionada({ frase }) {
   
   return (
     <ul className={styles.listaSeleccion}>
-        <li>hey</li>
+        <li>{ frase }</li>
     </ul>
   );
 }

@@ -2,9 +2,6 @@
     color: red;
 }
 
-li{
-    list-style-type: none;
-}
 
 .listaSeleccion{
     overflow: scroll;
