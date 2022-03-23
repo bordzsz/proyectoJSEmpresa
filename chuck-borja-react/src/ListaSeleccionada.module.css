@@ -5,3 +5,8 @@
 li{
     list-style-type: none;
 }
+
+.listaSeleccion{
+    overflow: scroll;
+    overflow-x: hidden;
+}

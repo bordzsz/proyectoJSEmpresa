@@ -1,3 +1,13 @@
 .fraseObtenida{
     text-align: center;
 }
+
+.containerCajas{
+    border-top: solid 1px black;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
