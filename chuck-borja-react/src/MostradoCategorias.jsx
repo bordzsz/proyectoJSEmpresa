@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Categoria } from "./Categoria";
+import { FraseDeCategoria } from "./FraseDeCategoria";
 import styles from "./MostradoCategorias.module.css";
 
 export function MostradoCategorias() {
@@ -20,12 +21,10 @@ export function MostradoCategorias() {
   return (
     <ul className={styles.listaCategorias}>
       {categorias.map((categoria) => (
-        //key={categoria.id} 
-        <Categoria categoria = {categoria} />
+        
+        <Categoria key={categoria.id} categoria = {categoria} />
       ))}
+      <FraseDeCategoria categoria={categorias[0]} />
     </ul>
-
-    
   );
-
 }
