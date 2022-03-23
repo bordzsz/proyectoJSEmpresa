@@ -11,10 +11,10 @@ export function MostradoCategorias() {
 
   const [categorias, setCategorias] = useState([]);
   const [valorCategorias, setValorCategorias] = useState([]);
-  const [frase, setFrase] = useState([]);
 
   const categoriaSeleccionada = async (e) => {
     setValorCategorias(e.target.value);
+
   };
 
   useEffect(() => {
@@ -25,21 +25,34 @@ export function MostradoCategorias() {
       });
   }, []);
 
-
   return (
+    <>
+      <ul className={styles.listaCategorias}>
+        {categorias.map((categoria, index) => (
+          <button
+            id={index}
+            value={categoria}
+            className={styles.botonCategoria}
+            onClick={categoriaSeleccionada}
+          >
+            {" "}
+            <Categoria key={categoria.id} categoria={categoria} />{" "}
+          </button>
+        ))}
+      </ul>
 
-    <><ul className={styles.listaCategorias}>
-      {categorias.map((categoria) => (
-
-        <button value={categoria} className={styles.botonCategoria} onClick={categoriaSeleccionada}> <Categoria key={categoria.id} categoria={categoria} /> </button>
-
-      ))}
-    </ul>
-    
-    <div className={styles.container}><div className={styles.containerCajas}><img src="https://assets.chucknorris.host/img/avatar/chuck-norris.png" alt="" /><h3>Frase de la categoría</h3></div><FraseDeCategoria categoria={valorCategorias} /></div></>
-    
+      <div className={styles.container}>
+        <div className={styles.containerCajas}>
+          <img
+            src="https://assets.chucknorris.host/img/avatar/chuck-norris.png"
+            alt=""
+          />
+          <h3>Frase de la categoría</h3>
+        </div>
+        <FraseDeCategoria categoria={valorCategorias} />
+      </div>
+    </>
   );
-
 }
 
 /*<div id="prueba">

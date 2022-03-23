@@ -1,9 +1,10 @@
 .listaSeleccion{
-    color: red;
+    color: red; 
+    width: 90%;
 }
 
-
-.listaSeleccion{
-    overflow: scroll;
-    overflow-x: hidden;
+li{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 14px;
 }
