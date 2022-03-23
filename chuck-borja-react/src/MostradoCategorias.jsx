@@ -26,5 +26,7 @@ export function MostradoCategorias() {
       ))}
       <FraseDeCategoria categoria={categorias[0]} />
     </ul>
+    
   );
+
 }
