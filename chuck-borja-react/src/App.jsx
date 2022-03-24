@@ -7,7 +7,8 @@ export function App(){
     return(<div>
             <header>
                 <div className={styles.containerTitulo}>
-                    <h1>Proyecto ReactJS - Chuck Borja Díaz</h1>
+                    <h1>Generador de Frases Chuck Norris - ReactJS</h1>
+                    <h4>Creado por Borja Díaz</h4>
                     <img src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png" height="150px" alt="" />
                 </div>
                 <MostradoCategorias />
