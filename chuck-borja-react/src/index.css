@@ -1,20 +1,13 @@
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
   background-color: lightblue;
-  color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('https://thumbs.dreamstime.com/t/fondo-geom%C3%A9trico-negro-oscuro-del-mate-puro-sitio-moderno-m%C3%ADnimo-elegante-129574913.jpg');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

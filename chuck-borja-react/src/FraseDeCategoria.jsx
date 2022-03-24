@@ -43,7 +43,7 @@ export function FraseDeCategoria({ categoria }) {
       <ul className={styles.fraseDeCategoria}>
         <li className={styles.fraseObtenida}>
           <p> {categorias.value} </p>
-          <button onClick={fetchPost}>
+          <button className={styles.botonGenerar} onClick={fetchPost}>
             {" "}
             Generar nueva frase de esa categoría.
           </button>

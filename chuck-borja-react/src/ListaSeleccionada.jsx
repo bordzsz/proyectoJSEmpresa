@@ -7,7 +7,7 @@ export function ListaSeleccionada({ frase }) {
     <ul id="listaFrases" className={styles.listaSeleccion}>
         {frase.map((unaFrase) => (
           
-        <li> {unaFrase} </li>
+        <li className={styles.elementosLista}> {unaFrase} </li>
 
         ))}
     </ul>

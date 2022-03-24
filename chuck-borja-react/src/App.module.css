@@ -1,5 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Smokum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+h1, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Smokum', cursive;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 2px;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
 h1{
     text-align: center;
+    font-size: 45px;
+}
+
+h3{
+    font-size: 25px;
 }
 
 .containerTitulo{

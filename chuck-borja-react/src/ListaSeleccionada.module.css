@@ -1,10 +1,14 @@
 .listaSeleccion{
     color: red; 
-    width: 90%;
+    width: 100%;
+    text-align: center;
 }
 
-li{
+.elementosLista{
     text-align: center;
     padding-bottom: 10px;
+    padding-right: 40px;
     font-size: 14px;
+    list-style-type: decimal;
+    list-style-position: inside;
 }

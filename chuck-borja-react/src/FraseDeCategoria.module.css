@@ -1,20 +1,42 @@
-.fraseObtenida{
-    text-align: center;
+.fraseObtenida {
+  text-align: center;
 }
 
-.containerCajas{
-    border-top: solid 1px black;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap:15px;
-    
+.containerCajas {
+  border-top: solid 1px gray;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
-.containerTodo{
-    overflow: auto;
-    overflow-x: hidden;
-    height: 200px;
+.containerTodo {
+  overflow: auto;
+  overflow-x: hidden;
+  height: 200px;
+}
+
+.botonGenerar {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 14px 15px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  transition: transform 200ms;
+  color: #000000;
+  box-shadow: 0 0 0 3px #000000 inset;
+}
+
+.botonGenerar:hover {
+  transform: scale(1.1);
+}
+
+.botonGenerar:active{
+    background-color: rgba(245, 245, 245, 0.719);
 }
