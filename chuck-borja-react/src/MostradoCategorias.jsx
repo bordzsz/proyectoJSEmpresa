@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Categoria } from "./Categoria";
 import { FraseDeCategoria } from "./FraseDeCategoria";
 import { ListaSeleccionada } from "./ListaSeleccionada";
 import styles from "./MostradoCategorias.module.css";
@@ -12,7 +11,7 @@ export function MostradoCategorias() {
   const [categorias, setCategorias] = useState([]);
   const [valorCategorias, setValorCategorias] = useState([]);
 
-  const categoriaSeleccionada = async (e) => {
+  const categoriaSeleccionada = (e) => {
     setValorCategorias(e.target.value);
 
   };
@@ -35,8 +34,7 @@ export function MostradoCategorias() {
             className={styles.botonCategoria}
             onClick={categoriaSeleccionada}
           >
-            {" "}
-            <Categoria key={categoria.id} categoria={categoria} />{" "}
+            {categoria}
           </button>
         ))}
       </ul>
@@ -55,10 +53,3 @@ export function MostradoCategorias() {
   );
 }
 
-/*<div id="prueba">
-    <div className={styles.containerCajas}>
-        <img src="https://assets.chucknorris.host/img/avatar/chuck-norris.png" alt="" />
-        <h3>Frase de la categoría</h3>
-    </div>
-    <FraseDeCategoria/>
-</div>*/

@@ -63,5 +63,6 @@ li {
 .botonCategoria:hover {
   display: inline-block;
   transform: scale(1.1);
+  color: red;
 }
 

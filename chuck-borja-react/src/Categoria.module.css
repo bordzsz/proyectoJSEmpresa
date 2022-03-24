@@ -1,9 +1,0 @@
-.categoriaEspecifica{
-    list-style-type: none;
-}
-
-.categoriaEspecifica:hover{
-    color: red;
-    cursor: pointer;
-}
-

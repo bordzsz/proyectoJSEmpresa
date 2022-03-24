@@ -8,7 +8,7 @@ export function FraseDeCategoria({ categoria }) {
   //https://api.chucknorris.io/jokes/random?category=animal
 
   const [categorias, setCategorias] = useState([]);
-  const [frases, setFrases] = useState([]); //Dentro de useState podemos meter el localStorage y así cargar las frases guardads desde ahi
+  const [frases, setFrases] = useState([]); 
 
   const fetchPost = async () => {
     const response = await fetch(
@@ -37,6 +37,8 @@ export function FraseDeCategoria({ categoria }) {
       });
     }
   }, []);
+
+
 
   return (
     <>
