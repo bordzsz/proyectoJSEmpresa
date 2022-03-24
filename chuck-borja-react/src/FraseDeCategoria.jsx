@@ -8,37 +8,39 @@ export function FraseDeCategoria({ categoria }) {
   //https://api.chucknorris.io/jokes/random?category=animal
 
   const [categorias, setCategorias] = useState([]);
-  const [frases, setFrases] = useState([]); 
+  const [frases, setFrases] = useState([]);
 
   const fetchPost = async () => {
-    const response = await fetch(
-      `https://api.chucknorris.io/jokes/random?category=${categoria}`
-    );
-    const data = await response.json();
-    setCategorias(data);
-    if (data.value != 'null ') {
-      setFrases(frases.concat(data.value));
+    if(categoria != ''){
+      const response = await fetch(
+        `https://api.chucknorris.io/jokes/random?category=${categoria}`
+      );
+      const data = await response.json();
+      setCategorias(data);
+      if (data.value != "null ") {
+        setFrases(frases.concat(data.value));
+      }
+      if (frases[0] == "null ") {
+        frases.splice(0, 1);
+      }
+      const frasesLocal = localStorage.getItem("frases");
+      localStorage.setItem("frases", frasesLocal + " | " + data.value);
+    }else{
+      window.alert("Primero selecciona una categoría.");
     }
-    if (frases[0] == 'null ') {
-      frases.splice(0, 1);
-    }
-    const frasesLocal = localStorage.getItem("frases");
-    localStorage.setItem("frases", frasesLocal + " | " + data.value);
   };
 
   useEffect(() => {
     if (localStorage.getItem("frases") != null) {
       var verFrasesLocal = localStorage.getItem("frases").split("|");
-      if(verFrasesLocal[0] == 'null '){
-        verFrasesLocal.splice(0,1);
+      if (verFrasesLocal[0] == "null ") {
+        verFrasesLocal.splice(0, 1);
       }
-      verFrasesLocal.forEach(element => {
-        frases.push(element)
+      verFrasesLocal.forEach((element) => {
+        frases.push(element);
       });
     }
   }, []);
-
-
 
   return (
     <>

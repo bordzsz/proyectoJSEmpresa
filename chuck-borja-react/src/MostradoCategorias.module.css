@@ -11,17 +11,22 @@ li {
   list-style-type: none;
 }
 
+.textoCategoria{
+  color: yellow;
+  text-align: center;
+}
+
 .containerCajas {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1em;
-  padding: 20px;
+  padding: 20px 20px 5px 20px;
 }
 
 .container {
-  margin-top: 40px;
+  margin-top: 10px;
   padding: 20px;
   width: 90%;
   height: 100%;

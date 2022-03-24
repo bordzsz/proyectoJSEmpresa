@@ -2,9 +2,12 @@
   text-align: center;
 }
 
+.fraseDeCategoria{
+  border-bottom: solid 1px gray;
+  padding-bottom: 20px;
+}
+
 .containerCajas {
-  border-top: solid 1px gray;
-  padding-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -19,7 +22,6 @@
 }
 
 .botonGenerar {
-  display: inline-block;
   outline: 0;
   border: 0;
   cursor: pointer;
@@ -31,12 +33,15 @@
   transition: transform 200ms;
   color: #000000;
   box-shadow: 0 0 0 3px #000000 inset;
+  margin-right: 15px;
 }
 
 .botonGenerar:hover {
   transform: scale(1.1);
+  color: red;
 }
 
 .botonGenerar:active{
     background-color: rgba(245, 245, 245, 0.719);
+    color: lightgreen;
 }

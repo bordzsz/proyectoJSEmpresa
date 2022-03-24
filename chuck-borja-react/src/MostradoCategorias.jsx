@@ -12,6 +12,7 @@ export function MostradoCategorias() {
   const [valorCategorias, setValorCategorias] = useState([]);
 
   const categoriaSeleccionada = (e) => {
+
     setValorCategorias(e.target.value);
 
   };
@@ -46,7 +47,9 @@ export function MostradoCategorias() {
             alt=""
           />
           <h3>Frase de la categoría</h3>
+          
         </div>
+        <h4>Categoría seleccionada: <span className={styles.textoCategoria}>{valorCategorias}</span></h4>
         <FraseDeCategoria categoria={valorCategorias} />
       </div>
     </>

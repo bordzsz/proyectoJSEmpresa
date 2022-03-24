@@ -8,6 +8,7 @@ h1, h3, h4 {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     letter-spacing: 2px;
+    color: rgb(241, 90, 36);
 }
 
 li {
@@ -20,6 +21,7 @@ h1{
     text-align: center;
     font-size: 45px;
     margin-bottom: 10px;
+    
 }
 
 h3{
